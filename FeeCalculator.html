@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculate your course fees with Empowering the Nation's fee calculator.">
+    <title>Fee Calculator - Empowering the Nation</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <script src="calculator.js" defer></script> <!-- Link to your JavaScript file -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="_images/Logo_XHAW.png" alt="Empowering the Nation Logo" width="300" height="150">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Courses6M.html">6-Month Courses</a></li>
+                <li><a href="Courses6W.html">6-Week Courses</a></li>
+                <li><a href="FeeCalculator.html">Fee Calculator</a></li>
+                <li><a href="ContactInfo.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="fee-calculator">
+            <h1>Fee Calculator</h1>
+            <p>Select the courses you are interested in to calculate the total fees.</p>
+
+            <form id="calculatorForm">
+                <label><input type="checkbox" name="course" value="1000"> First Aid Training - R1000</label><br>
+                <label><input type="checkbox" name="course" value="1200"> Basic Child Minding - R1500</label><br>
+                <label><input type="checkbox" name="course" value="1500"> Intro to Sewing - R1200</label><br>
+                <label><input type="checkbox" name="course" value="1100"> Home Cooking Skills - R2000</label><br>
+                <label><input type="checkbox" name="course" value="1300"> Garden Maintenance - R1800</label><br>
+                <label><input type="checkbox" name="course" value="1600"> Landscaping and Gardening - R8500</label><br>
+                <label><input type="checkbox" name="course" value="1600"> Advanced Child Minding - R6500</label><br>
+                <label><input type="checkbox" name="course" value="1600"> Professional Cooking - 10000</label><br>
+                <label><input type="checkbox" name="course" value="1600"> Sewing and Tailoring - R7500</label><br>
+                <label><input type="checkbox" name="course" value="1600"> Housekeeping and Hospitality - R6000</label><br>
+                <!-- Add more courses as needed -->
+
+                <!-- Button and error message display -->
+                <button type="button" onclick="calculateFees()">Calculate Total Fee</button>
+                <p id="errorMessage" style="color: red;"></p>
+            </form>
+
+            <div class="result">
+                <h2>Total Fee: R<span id="totalFee">0</span></h2>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Empowering the Nation. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="ContactInfo.html">Contact Us</a>
+        </div>
+    </footer>
+</body>
+</html>
